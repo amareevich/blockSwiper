@@ -20,7 +20,6 @@ class Changes {
         this._link = this.changes_element.bind(this);
         this._reset = this.reset_inline.bind(this);
         this.changer.addEventListener('click', this._link);
-        this.window.addEventListener('resize', this._reset)
     };
 
     // Обработчик проверяет наличие базового CSS класса, и в зависимоти от результата меняет высоту + переключает классы
