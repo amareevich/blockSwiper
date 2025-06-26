@@ -6,188 +6,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>page__5</title>
-
 </head>
 
 <body>
-    <main>
-        <section class="modal"></section>
+    <main class="page">
 
-        <section class="menu">
+        <section class="page__modal"></section>
+
+        <section class="page__menu menu">
+
             <header class="menu__header">
-                <button class="button menu__button button--type--close"></button>
-                <a href="#" class="menu__a menu__a--type--logo"></a>
-                <button class="button menu__button button--type--search"></button>
+                <ul class="list menu__list--type--header">
+                    <li class="list__item">
+                        <button class="button button--type--close"></button>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="logo"></a>
+                    </li>
+                    <li class="list__item">
+                        <button class="button button--type--search"></button>
+                    </li>
+                </ul>
             </header>
 
-            <ul class="menu__list">
-                <li class="menu__li"><a href="#">Ремонт техники</a></li>
-                <li class="menu__li"><a href="#">Услуги и сервисы</a></li>
-                <li class="menu__li"><a href="#">Корпоративным клиентам</a></li>
-                <li class="menu__li"><a href="#">Продавцам техники</a></li>
-                <li class="menu__li"><a href="#">Партнерам</a></li>
-                <li class="menu__li"><a href="#">Производителям</a></li>
-                <li class="menu__li"><a href="#">Наши сервисные центры</a></li>
-                <li class="menu__li"><a href="#">Контакты</a></li>
-            </ul>
+            <nav class="menu__navigation">
+                <ul class="list menu__list--type--navigation">
+                    <li class="list__item"><a href="#">Ремонт техники</a></li>
+                    <li class="list__item"><a href="#">Услуги и сервисы</a></li>
+                    <li class="list__item"><a href="#">Корпоративным клиентам</a></li>
+                    <li class="list__item"><a href="#">Продавцам техники</a></li>
+                    <li class="list__item"><a href="#">Партнерам</a></li>
+                    <li class="list__item"><a href="#">Производителям</a></li>
+                    <li class="list__item"><a href="#">Наши сервисные центры</a></li>
+                    <li class="list__item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
 
             <footer class="menu__footer">
-                <div class="menu__button-panel">
-                    <button class="button menu__button button--type--call"></button>
-                    <button class="button menu__button button--type--text"></button>
-                    <button class="button menu__button button--type--account "></button>
-                </div>
+                <ul class="list menu__list--type--top-footer">
+                    <li class="list__item">
+                        <button class="button button--type--call"></button>
+                    </li>
+                    <li class="list__item">
+                        <button class="button button--type--text"></button>
+                    </li>
+                    <li class="list__item">
+                        <button class="button button--type--account "></button>
+                    </li>
+                </ul>
 
-                <div class="menu__contact">
-                    <p class="menu__mail">mail@cps.com</p>
-                    <p class="menu__phone">8 800 890 8900</p>
-                </div>
+                <address class="menu__address">
+                    <ul class="list menu__list--type--address">
+                        <li class="list__item">
+                            <a href="#">mail@cps.com</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">8 800 890 8900</a>
+                        </li>
+                    </ul>
+                </address>
 
-
-                <div class="menu__langue">
-                    <p>RU</p>
-                    <p>EN</p>
-                    <p>CH</p>
-                </div>
+                <ul class="list menu__list--type--bottom--footer">
+                    <li class="list__item">
+                        <button>RU</button>
+                    </li>
+                    <li class="list__item">
+                        <button>EN</button>
+                    </li>
+                    <li class="list__item">
+                        <button>CH</button>
+                    </li>
+                </ul>
             </footer>
+
         </section>
 
-        <section class="page">
-            <header class="header">
+        <section class="page__container container">
+            <header class="container__header">
+                <nav class="container__navigation--type--header">
 
-                <nav class="header__nav nav-top">
+                    <ul class="list container__list--type--logo">
+                        <li class="list__item">
+                            <a href="#">Услуги и сервисы</a>
+                        </li>
+                        <li class="list__item">
+                            <button class="button button--type--menu" aria-label="меню"></button>
+                        </li>
 
-                    <div class="header__div header__div--type--logo">
+                        <div class="separator container__separator--type--first">&nbsp;</div>
 
-                        <a href="#" class="header__a header__a--type--services">Услуги и сервисы</a>
-
-                        <button class="button header__button button--type--menu" href="#" aria-label="меню"></button>
-
-                        <div class="header__separator header__separator--type--first">&nbsp;</div>
-
-                        <a href="#" class="header__a header__a--type--logo"></a>
-
-                    </div>
-
-
-                    <div class="header__separator header__separator--type--midlle">&nbsp;</div>
-
-
-                    <div class="header__div header__div--type--connection">
-
-                        <button class="button header__button button--type--call" href="#"
-                            aria-label="позвонить"></button>
-
-                        <button class="button header__button button--type--text"
-                            aria-label="отправить сообщение"></button>
-
-                        <button class="button header__button button--type--account" href="#"
-                            aria-label="профиль"></button>
-
-                    </div>
+                        <li class="list__item">
+                            <a href="/" class="logo"></a>
+                        </li>
+                    </ul>
 
 
-                    <div class="header__separator header__separator--type--last">&nbsp;</div>
+                    <div class="separator container__separator--type--middle">&nbsp;</div>
 
 
-                    <div class="header__div header__div--type--status">
+                    <ul class="list container__list--type--connection">
+                        <li class="list__item">
+                            <button class="button button--type--call" href="#" aria-label="позвонить"></button>
+                        </li>
+                        <li class="list__item">
+                            <button class="button button--type--text" aria-label="отправить сообщение"></button>
+                        </li>
+                        <li class="list__item">
+                            <button class="button button--type--account" href="#" aria-label="профиль"></button>
+                        </li>
+                    </ul>
 
-                        <span>Оставить заявку</span>
-                        <button class="button header__button button--type--application" href="#"
-                            aria-label="отправить заявку"></button>
+                    <div class="separator container__separator--type--last">&nbsp;</div>
 
-                        <span>Статус ремонта</span>
-                        <button class="button header__button button--type--status" href="#"
-                            aria-label="статус заявки"></button>
 
-                    </div>
+                    <ul class="list container__list--type--status">
+
+                        <li class="list__item">
+                            <span>Оставить заявку</span>
+                            <button class="button button--type--application" href="#"
+                                    aria-label="создать заявку"></button>
+                        </li>
+                        <li class="list__item">
+                            <span>Статус ремонта</span>
+                            <button class="button button--type--status" href="#" aria-label="статус заявки"></button>
+                        </li>
+
+                    </ul>
                 </nav>
             </header>
 
-            <section class="content">
+            <section class="container__about">
                 <h1>Услуги и сервисы</h1>
 
-                <nav class="content__nav">
-                    <a href="#">Ремонтируемые бренды</a>
-                    <a href="#"> Ремонтируемые устройства</a>
-                    <a href="#">Цены на услуги</a>
-                    <a href="#">Адреса сервисных центров</a>
-                    <a href="#">Специальные цены</a>
-                    <a href="#">Отзывы</a>
+                <nav class="container__navigation--type--about">
+                    <ul class="list container__list--type--about">
+                        <li class="list__item"><a href="#">Ремонтируемые бренды</a></li>
+                        <li class="list__item"><a href="#"> Ремонтируемые устройства</a></li>
+                        <li class="list__item"><a href="#">Цены на услуги</a></li>
+                        <li class="list__item"><a href="#">Адреса сервисных центров</a></li>
+                        <li class="list__item"><a href="#">Специальные цены</a></li>
+                        <li class="list__item"><a href="#">Отзывы</a></li>
+                    </ul>
                 </nav>
 
+                <article class="container__article--type--about">
 
-                <article class="content__article">
-
-                    <div class="content__textDiv">
-                        <p class="content__p content__p--type--p1">
+                    <div class="article__text">
+                        <p class="article__p--type--p-top">
                             Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                             Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
                             производителя.
                         </p>
 
-                        <p class="content__p content__p--type--p2">
+                        <p class="article__p--type--p-bottom">
                             Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
                             что подтверждает большое количество постоянных клиентов.
                             Мы гордимся тем, что к нам обращаются по рекомендациям и,
                             в свою очередь, советуют нас родным и близким.
                         </p>
-                        <button class="content__button"><img src="./img/ic_expand.svg"> <span>Читать
-                                далее</span></button>
-                    </div>
+                        <button class="unwrap-btn unwrap-btn--action--open unwrap-btn--type--article">
+                            <img src="./unwrap/unwrap_images/unwrap.svg">
+                            <span>Читать далее</span>
+                        </button>
+                    </div> 
 
-                    <img src="./img/Picture Copy.svg" alt="Information signage" class="content__img">
+                    <img src="./img/Picture Copy.svg" alt="Information signage" class="article__img">
                 </article>
 
             </section>
+ 
+            <h2>Ремонт техники различных брендов</h2>
 
-            <section class="brends">
-                <h2>Ремонт техники различных брендов</h2>
-                <nav class="swiper">
-                    <ul class="swiper-wrapper" >
-                        <li class="swiper-slide">
+            <section class="container__brends brends">
+
+                <nav class="swiper container__navigation--type--brends">
+                    <ul class="swiper-wrapper list--type--brends">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/lenovo.svg" alt="lenovo">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/samsung.svg" alt="samsung">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/apple.svg" alt="apple">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/view-sonic.svg" alt="view-sonic">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/bosch.svg" alt="bosch">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/hp.svg" alt="hp">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/aser.svg" alt="acer">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/sony.svg" alt="sony">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/lenovo.svg" alt="lenovo">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/samsung.svg" alt="samsung">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
-                        <li class="swiper-slide">
+                        <li class="swiper-slide list__item">
                             <img src="./brends/brends__images/apple.svg" alt="apple">
-                            <button class="brends__button" tabindex="-1"></button>
+                            <button class="button" tabindex="-1"></button>
                         </li>
                     </ul>
                     <div class="swiper-pagination">
@@ -205,13 +241,15 @@
                     </div>
                 </nav>
 
-                <button class="unwrap-btn unwrap-btn--action--changes-width">
-                    <img src="./img/ic_expand.svg" alt="показать\свернуть" class="unwrap-btn__arrow-img unwrap-btn__arrow-img--action--open">
-                    <span class="unwrap-btn__text unwrap-btn__text--action--open">Показать все</span>
+                <button class="unwrap-btn unwrap-btn--action--open unwrap-btn--type--brends">
+                    <img src="./unwrap/unwrap_images/unwrap.svg" alt="показать\свернуть" class="unwrap-btn__arrow-img">
+                    <span class="unwrap-btn__text">Показать все</span>
                 </button>
 
             </section>
+
         </section>
+
     </main>
 
     <script type="module" src="./dist/main.js"></script>

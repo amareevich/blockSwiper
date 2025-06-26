@@ -1,0 +1,51 @@
+@use '../var';
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 1;
+    cursor: pointer;
+    background-color: var.$pink-color;
+    border: 2px solid var.$pink-color;
+    @include var.transition-func(box-shadow);
+    @include var.transition-func(opacity);
+
+    &:hover {
+        @include var.hover-button;
+    }
+
+    &--type {
+        &--close {
+            background: url(./button/button__img/burger_close.svg) no-repeat center/cover;
+        }
+
+        &--menu {
+            background: url(./button/button__img/burger_open.svg) no-repeat center/cover;
+        }
+
+        &--search {
+            background: url(./button/button__img/search.svg) no-repeat center/cover;
+        }
+
+        &--call {
+            background: url(./button/button__img/call.svg) no-repeat center/cover;
+        }
+
+        &--text {
+            background: url(./button/button__img/chat.svg) no-repeat center/cover;
+        }
+
+        &--account {
+            background: url(./button/button__img/profile.svg) no-repeat center/cover;
+        }
+
+        &--application {
+            background: url(./button/button__img/repair.svg) no-repeat center/cover;
+        }
+
+        &--status {
+            background: url(./button/button__img/check_status.svg) no-repeat center/cover;
+        }
+    }
+}
