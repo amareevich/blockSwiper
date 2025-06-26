@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     async function setListener() {
 
         if (window.innerWidth < 767 && flag__module__swiper === false) {
-
-            window.removeEventListener('resize', module__desktop.reset_inline)
             module__desktop ? module__desktop.destroy() : null;
             flag__module__desktop = false;
             flag__module__swiper = true;
