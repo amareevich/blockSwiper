@@ -1,7 +1,6 @@
 const btn = document.querySelector('.unwrap-btn--type--brends');
 const changeable_element = document.querySelector('.swiper-wrapper');
 
-//Попытка сделать универсальный обработчик клика и изменения высоты
 class Changes {
     constructor(changing_element, modified_element) {
 
@@ -18,13 +17,13 @@ class Changes {
         this.changer_children_span = this.changer.querySelector('span');
         this.base_height = getComputedStyle(this.changing).height;
         this._link = this.changes_element.bind(this);
-        this._reset = this.reset_inline.bind(this);
+        // this._reset = this.reset_inline.bind(this);
         this.changer.addEventListener('click', this._link);
     };
 
     // Обработчик проверяет наличие базового CSS класса, и в зависимоти от результата меняет высоту + переключает классы
     changes_element() {
-        this.window.addEventListener('resize', this._reset);
+        // this.window.addEventListener('resize', this._reset);
         const boolean_toggle = this.changer.classList.contains('unwrap-btn--action--open');
         this.changer.classList.toggle('unwrap-btn--action--open');
         this.changer.classList.toggle('unwrap-btn--action--close');

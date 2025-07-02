@@ -1,6 +1,6 @@
 import menu__action from './menu/menu.js';
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
     let flag__module__swiper = false;
     let flag__module__desktop = false;
     let module__swiper;
@@ -24,6 +24,5 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     setListener();
     menu__action();
-    window.addEventListener('resize', setListener);
 })
 

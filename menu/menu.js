@@ -4,7 +4,6 @@ export default function menu__action () {
         classList
             ? classList.forEach(el => {
                 if (typeof clickMenu[el] === 'function') {
-                    console.log('s')
                     e.preventDefault();
                     e.stopImmediatePropagation();
                     clickMenu[el]();
