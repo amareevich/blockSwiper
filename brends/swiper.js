@@ -7,7 +7,7 @@ export default function swiper__init() {
         loop: true,
         speed: 500,
         slidesPerView: 'auto',
-        spaceBetween: 16,
+        spaceBetween: 28,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',

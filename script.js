@@ -24,5 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setListener();
     menu__action();
+    window.addEventListener('resize', setListener);
 })
 

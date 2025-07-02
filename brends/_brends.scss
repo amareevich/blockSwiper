@@ -80,11 +80,9 @@
     .swiper {
         width: 100%;
         overflow: hidden;
-        gap: 0;
-        gap: 16px;
 
         &-wrapper {
-            width: 1160%;
+            width: 2860px;
             display: flex;
             transition: inherit;
             gap: 0;
@@ -103,15 +101,14 @@
             justify-content: center;
             width: 100%;
             height: 12px;
-            gap: 12px;
+            gap: 8px;
 
             &-bullet {
                 display: block;
                 width: 12px;
                 height: 12px;
-                border-radius: 50%;
+                border-radius: 45%;
                 background-color: rgb(221, 221, 221);
-                border: none;
                 @include var.transition-func(background-color);
 
                 &-active {
